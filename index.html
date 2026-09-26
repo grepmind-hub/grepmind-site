@@ -4208,7 +4208,9 @@
           currentCoursesList = courses;
           statusBadge.innerHTML = `<span class="pulse-dot" style="background-color: var(--primary);"></span> Sheets Sync Online`;
         } else {
-          throw new Error("Parsed courses array returned empty list");
+          // Sheet is accessible but has no data rows yet — fall back silently
+          console.info("Google Sheet is published but has no course rows yet. Using local fallback data.");
+          statusBadge.innerHTML = `<span class="pulse-dot" style="background-color: var(--text-muted);"></span> Local Cache`;
         }
       } catch (err) {
         console.error("Sheets sync failed. Reverting to static backup: ", err);
