@@ -69,13 +69,17 @@
       padding: 0;
     }
 
+    /* Hide scrollbars globally (iframe embed — keeps scroll functionality via mouse/touch) */
+    ::-webkit-scrollbar { display: none; }
+    html, body { scrollbar-width: none; -ms-overflow-style: none; }
+
     body {
       font-family: var(--font-main);
       background-color: var(--bg-page);
       color: var(--text-primary);
       line-height: 1.6;
       overflow-x: hidden;
-      min-height: 100vh;
+      /* min-height: 100vh removed — was causing Google Sites iframe to show massive whitespace */
       display: flex;
       flex-direction: column;
       position: relative;
@@ -4050,6 +4054,11 @@
           switchView(viewId, e);
         }
       });
+
+      // Report initial page height to Google Sites after all content loads
+      // (500ms delay lets images/fonts finish rendering for accurate height)
+      setTimeout(reportHeightToParent, 500);
+      window.addEventListener("load", () => setTimeout(reportHeightToParent, 300));
     });
 
     // Configures Google Drive images or falls back to local items
@@ -4143,6 +4152,32 @@
       });
 
       window.scrollTo({ top: 0, behavior: 'smooth' });
+
+      // Report new content height to Google Sites parent iframe after section animates in
+      setTimeout(reportHeightToParent, 520);
+    }
+
+    // Sends actual page height to parent frame (Google Sites) via postMessage.
+    // Google Sites uses this to auto-resize the embed iframe height,
+    // eliminating the scrollbar and whitespace below the content.
+    function reportHeightToParent() {
+      try {
+        const height = Math.max(
+          document.body.scrollHeight,
+          document.body.offsetHeight,
+          document.documentElement.scrollHeight
+        );
+        // Standard postMessage format
+        window.parent.postMessage({ height: height }, '*');
+        // Google Sites / AMP embed-size format
+        window.parent.postMessage(JSON.stringify({
+          sentinel: 'amp',
+          type: 'embed-size',
+          height: height
+        }), '*');
+      } catch (e) {
+        // Silently ignore if parent frame is cross-origin or postMessage is blocked
+      }
     }
 
     /*
