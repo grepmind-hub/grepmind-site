@@ -1,25 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TS6M20RPBZ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-TS6M20RPBZ');
-</script>
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TS6M20RPBZ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-TS6M20RPBZ');
+  </script>
   <meta name="google-adsense-account" content="ca-pub-7488801686740062">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="GrepMind - Advanced DevOps & AI Course Gating Hub. Learn Kubernetes, Terraform, and FastAPI scaling.">
+  <meta name="description"
+    content="GrepMind - Advanced DevOps & AI Course Gating Hub. Learn Kubernetes, Terraform, and FastAPI scaling.">
   <title>GrepMind | Premium DevOps & AI Hub</title>
-  
+
   <!-- Premium Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
 
   <style>
     /* ----------------------------------------------------
@@ -31,18 +35,18 @@
       --bg-card-solid: #ffffff;
       --border-color: rgba(226, 232, 240, 0.8);
       --border-glow: rgba(16, 185, 129, 0.25);
-      
+
       --text-primary: #0f172a;
       --text-secondary: #475569;
       --text-muted: #64748b;
-      
+
       /* Emerald Green Palette */
       --primary: #059669;
       --primary-hover: #047857;
       --primary-glow: rgba(5, 150, 105, 0.12);
       --accent: #10b981;
       --accent-mint: #34d399;
-      
+
       --gradient-primary: linear-gradient(135deg, #059669 0%, #10b981 100%);
       --gradient-subtle: linear-gradient(135deg, #f0fdf4 0%, #ecfdf5 100%);
       --gradient-text: linear-gradient(135deg, #064e3b 0%, #059669 100%);
@@ -50,12 +54,12 @@
 
       --font-main: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
       --font-display: 'Space Grotesk', sans-serif;
-      
+
       --shadow-sm: 0 2px 8px rgba(148, 163, 184, 0.05);
       --shadow-md: 0 12px 30px -10px rgba(148, 163, 184, 0.18);
       --shadow-lg: 0 22px 40px -15px rgba(5, 150, 105, 0.1);
       --shadow-glow: 0 0 20px rgba(16, 185, 129, 0.25);
-      
+
       --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
       --radius-sm: 8px;
       --radius-md: 16px;
@@ -70,8 +74,15 @@
     }
 
     /* Hide scrollbars globally (iframe embed — keeps scroll functionality via mouse/touch) */
-    ::-webkit-scrollbar { display: none; }
-    html, body { scrollbar-width: none; -ms-overflow-style: none; }
+    ::-webkit-scrollbar {
+      display: none;
+    }
+
+    html,
+    body {
+      scrollbar-width: none;
+      -ms-overflow-style: none;
+    }
 
     body {
       font-family: var(--font-main);
@@ -93,7 +104,7 @@
       left: 0;
       width: 100%;
       height: 1200px;
-      background-image: 
+      background-image:
         linear-gradient(rgba(148, 163, 184, 0.04) 1px, transparent 1px),
         linear-gradient(90deg, rgba(148, 163, 184, 0.04) 1px, transparent 1px);
       background-size: 50px 50px;
@@ -147,11 +158,13 @@
     }
 
     .brand-orange {
-      color: #f85f03; /* Original brand logo orange */
+      color: #f85f03;
+      /* Original brand logo orange */
     }
 
     .brand-green {
-      color: var(--primary); /* Theme emerald green */
+      color: var(--primary);
+      /* Theme emerald green */
     }
 
     .brand-logo-img {
@@ -215,6 +228,7 @@
         opacity: 0;
         transform: translateY(15px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -222,9 +236,17 @@
     }
 
     @keyframes float {
-      0% { transform: translateY(0px); }
-      50% { transform: translateY(-10px); }
-      100% { transform: translateY(0px); }
+      0% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-10px);
+      }
+
+      100% {
+        transform: translateY(0px);
+      }
     }
 
     .page-section.active {
@@ -688,22 +710,31 @@
       stroke-dasharray: 6, 6;
       animation: dash-flow 25s linear infinite;
     }
-    
+
     @keyframes dash-flow {
       to {
         stroke-dashoffset: -1000;
       }
     }
-    
+
     .pulse-node {
       animation: node-pulse 2.5s infinite ease-in-out;
       transform-origin: center;
     }
-    
+
     @keyframes node-pulse {
-      0% { opacity: 0.85; }
-      50% { opacity: 1; filter: drop-shadow(0 0 6px var(--primary)); }
-      100% { opacity: 0.85; }
+      0% {
+        opacity: 0.85;
+      }
+
+      50% {
+        opacity: 1;
+        filter: drop-shadow(0 0 6px var(--primary));
+      }
+
+      100% {
+        opacity: 0.85;
+      }
     }
 
     .handbook-toc-title {
@@ -863,7 +894,7 @@
         grid-template-columns: 1fr;
         gap: 1.5rem;
       }
-      
+
       .handbook-sidebar {
         position: relative;
         top: 0;
@@ -1162,7 +1193,9 @@
     }
 
     @keyframes spin {
-      100% { transform: rotate(360deg); }
+      100% {
+        transform: rotate(360deg);
+      }
     }
 
     .result-alert-box {
@@ -1237,7 +1270,8 @@
       margin-bottom: 0.25rem;
     }
 
-    .contact-card-details p, .contact-card-details a {
+    .contact-card-details p,
+    .contact-card-details a {
       font-size: 0.95rem;
       color: var(--text-secondary);
       text-decoration: none;
@@ -1582,6 +1616,7 @@
     }
   </style>
 </head>
+
 <body>
 
   <!-- ----------------------------------------------------
@@ -1591,12 +1626,15 @@
     <div class="header-container">
       <a href="#home" class="brand-logo" data-view="home">
         <!-- Logo dynamic image loading configured via script -->
-        <img class="brand-logo-img" id="logo-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23059669' d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E" alt="Logo">
+        <img class="brand-logo-img" id="logo-img"
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23059669' d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E"
+          alt="Logo">
         <span id="brand-text"><span class="brand-orange">Grep</span><span class="brand-green">Mind</span></span>
       </a>
-      
+
       <nav class="nav-links" aria-label="Main Navigation">
         <a href="#home" class="nav-item active" data-view="home">Home</a>
+        <a href="#products" class="nav-item" data-view="products">Products</a>
         <a href="#courses" class="nav-item" data-view="courses">Courses</a>
         <a href="#services" class="nav-item" data-view="services">Services</a>
         <a href="#portfolio" class="nav-item" data-view="portfolio">Portfolio</a>
@@ -1654,10 +1692,12 @@
             transform: scale(0.9);
             box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.5);
           }
+
           70% {
             transform: scale(1);
             box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
           }
+
           100% {
             transform: scale(0.9);
             box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
@@ -1947,24 +1987,33 @@
             <span class="pulse-dot"></span>
             Enterprise Kubernetes Orchestration Hub
           </div>
-          <h1 class="home-hero-title">Intelligent Automation for <span class="gradient-text">Kubernetes Infrastructure</span></h1>
-          <p class="home-hero-desc">Discover the next-generation AI-native operations pipeline. GrepMind continuously monitors, analyzes dependencies, and securely resolves cluster incidents under your complete human control.</p>
+          <h1 class="home-hero-title">Intelligent Automation for <span class="gradient-text">Kubernetes
+              Infrastructure</span></h1>
+          <p class="home-hero-desc">Discover the next-generation AI-native operations pipeline. GrepMind continuously
+            monitors, analyzes dependencies, and securely resolves cluster incidents under your complete human control.
+          </p>
           <div class="home-hero-actions">
             <button class="btn btn-primary" data-view="courses">
               Launch Course Access
               <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"/>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3"
+                  d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
               </svg>
             </button>
-            <a href="https://www.grepmind.com/live-demo" target="_blank" rel="noopener noreferrer" class="btn" style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white; border: none; box-shadow: 0 0 12px rgba(249, 115, 22, 0.4); display: inline-flex; align-items: center; gap: 0.5rem; transition: transform 0.2s, box-shadow 0.2s; font-weight: 700; cursor: pointer; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 0 20px rgba(249, 115, 22, 0.6)';" onmouseout="this.style.transform='none'; this.style.boxShadow='0 0 12px rgba(249, 115, 22, 0.4)';">
+            <a href="https://www.grepmind.com/live-demo" target="_blank" rel="noopener noreferrer" class="btn"
+              style="background: linear-gradient(135deg, #f97316 0%, #ea580c 100%); color: white; border: none; box-shadow: 0 0 12px rgba(249, 115, 22, 0.4); display: inline-flex; align-items: center; gap: 0.5rem; transition: transform 0.2s, box-shadow 0.2s; font-weight: 700; cursor: pointer; padding: 0.75rem 1.5rem; border-radius: 8px; text-decoration: none;"
+              onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 0 20px rgba(249, 115, 22, 0.6)';"
+              onmouseout="this.style.transform='none'; this.style.boxShadow='0 0 12px rgba(249, 115, 22, 0.4)';">
               Launch Live Demo
-              <span class="pulse-dot" style="width: 8px; height: 8px; background-color: #ffffff; border-radius: 50%; display: inline-block; animation: pulse-glow 2s infinite; box-shadow: 0 0 8px #ffffff;"></span>
-            </a>            
+              <span class="pulse-dot"
+                style="width: 8px; height: 8px; background-color: #ffffff; border-radius: 50%; display: inline-block; animation: pulse-glow 2s infinite; box-shadow: 0 0 8px #ffffff;"></span>
+            </a>
           </div>
         </div>
-        
+
         <div class="home-hero-image-frame">
-          <img class="home-hero-img" id="hero-image-display" src="grepmind_homepage_hero.png" alt="GrepMind AI Platform Dashboard Preview">
+          <img class="home-hero-img" id="hero-image-display" src="grepmind_homepage_hero.png"
+            alt="GrepMind AI Platform Dashboard Preview">
         </div>
       </div>
 
@@ -1974,41 +2023,54 @@
         <article class="advantage-card">
           <div class="advantage-header">
             <div class="advantage-icon-box">
-              <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
             </div>
             <h4 class="advantage-title">Real-Time Operational telemetry</h4>
           </div>
-          <p class="advantage-desc">Aggregates namespace health, deployment dependencies, and configuration maps. Mitigates shallow alert warnings by enriching contexts with cluster logs and node events instantly.</p>
+          <p class="advantage-desc">Aggregates namespace health, deployment dependencies, and configuration maps.
+            Mitigates shallow alert warnings by enriching contexts with cluster logs and node events instantly.</p>
         </article>
 
         <!-- Adv 2 -->
         <article class="advantage-card">
           <div class="advantage-header">
             <div class="advantage-icon-box">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 16v-4M12 8h.01" />
+              </svg>
             </div>
             <h4 class="advantage-title">AI-Powered Root-Cause diagnosis</h4>
           </div>
-          <p class="advantage-desc">Correlates metrics anomalies, node pressures, and workload behaviours. Provides actionable Root Cause Analysis (RCA) explaining why failures occur and detailing the affected scopes.</p>
+          <p class="advantage-desc">Correlates metrics anomalies, node pressures, and workload behaviours. Provides
+            actionable Root Cause Analysis (RCA) explaining why failures occur and detailing the affected scopes.</p>
         </article>
 
         <!-- Adv 3 -->
         <article class="advantage-card">
           <div class="advantage-header">
             <div class="advantage-icon-box">
-              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
             </div>
             <h4 class="advantage-title">Closed-Loop Safe Remediation</h4>
           </div>
-          <p class="advantage-desc">Formulates safe rollback and scaling operations. Connects to enterprise human approval guardrails, executing operations in sandboxed containers with post-recovery validations.</p>
+          <p class="advantage-desc">Formulates safe rollback and scaling operations. Connects to enterprise human
+            approval guardrails, executing operations in sandboxed containers with post-recovery validations.</p>
         </article>
       </div>
 
       <!-- Interactive Core Loop pipeline -->
       <div class="operational-loop-box">
         <span class="vault-badge" style="background: rgba(5, 150, 105, 0.05);">Platform Loop</span>
-        <h3 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">Intelligent Anomaly Remediation Loop</h3>
-        <p style="font-size: 0.95rem; color: var(--text-secondary); max-width: 500px; margin: 0 auto;">How GrepMind securely drives closed-loop infrastructure stability.</p>
+        <h3
+          style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">
+          Intelligent Anomaly Remediation Loop</h3>
+        <p style="font-size: 0.95rem; color: var(--text-secondary); max-width: 500px; margin: 0 auto;">How GrepMind
+          securely drives closed-loop infrastructure stability.</p>
 
         <div class="loop-step-flow">
           <!-- Node 1 -->
@@ -2041,7 +2103,8 @@
 
       <!-- Tech stack integrations -->
       <div class="tech-integrations-box">
-        <h4 style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">Unified Ecosystem Integrations</h4>
+        <h4 style="font-family: var(--font-display); font-size: 1.2rem; font-weight: 700; color: var(--text-primary);">
+          Unified Ecosystem Integrations</h4>
         <div class="tech-grid">
           <div class="tech-badge-item">
             <span class="dot"></span>
@@ -2065,7 +2128,7 @@
           </div>
         </div>
       </div>
-      
+
       <div class="stats-row" style="margin-top: 4rem;">
         <div class="stat-card">
           <div class="stat-num">10k+</div>
@@ -2082,12 +2145,335 @@
       </div>
     </section>
 
+    <!-- SECTION: PRODUCTS -->
+    <section id="products-section" class="page-section">
+      <style>
+        .product-hero-container {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: 4rem;
+          align-items: center;
+          margin-bottom: 5rem;
+        }
+        @media (max-width: 900px) {
+          .product-hero-container {
+            grid-template-columns: 1fr;
+            text-align: center;
+          }
+        }
+        .trust-strip {
+          text-align: center;
+          margin-bottom: 5rem;
+          padding: 2.5rem 0;
+          border-top: 1px solid var(--border-color);
+          border-bottom: 1px solid var(--border-color);
+          background: rgba(148, 163, 184, 0.02);
+        }
+        .product-card {
+          display: flex;
+          flex-direction: column;
+          background: var(--bg-card);
+          border: 1px solid var(--border-color);
+          border-radius: var(--radius-lg);
+          padding: 2.5rem;
+          transition: var(--transition);
+        }
+        .product-card:hover {
+          transform: translateY(-5px);
+          box-shadow: var(--shadow-md);
+          border-color: var(--border-glow);
+        }
+        .product-card-title {
+          font-family: var(--font-display);
+          font-size: 1.65rem;
+          font-weight: 700;
+          color: var(--text-primary);
+          margin-bottom: 0.5rem;
+        }
+        .visuals-grid {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          gap: 2.5rem;
+          margin-bottom: 6rem;
+        }
+        .visual-mockup {
+          border-radius: var(--radius-md);
+          overflow: hidden;
+          box-shadow: var(--shadow-lg);
+          border: 1px solid var(--border-color);
+          background: var(--bg-card-solid);
+          transition: var(--transition);
+        }
+        .visual-mockup:hover {
+          transform: translateY(-5px);
+          border-color: var(--border-glow);
+        }
+        .visual-mockup img {
+          width: 100%;
+          height: auto;
+          display: block;
+        }
+        .dev-section {
+          background: rgba(15, 23, 42, 0.02);
+          border-radius: var(--radius-lg);
+          padding: 5rem 3rem;
+          margin-bottom: 5rem;
+          border: 1px solid rgba(15, 23, 42, 0.05);
+        }
+      </style>
+
+      <!-- HERO -->
+      <div class="product-hero-container">
+        <div>
+          <span class="vault-badge" style="background: rgba(16, 185, 129, 0.1); color: var(--primary);">THE GREPMIND ECOSYSTEM</span>
+          <h2 class="home-hero-title" style="font-size: 2.75rem; margin-top: 1.25rem;">Products Built to Simplify Work, <span class="gradient-text">Technology & Operations</span></h2>
+          <p class="home-hero-desc" style="font-size: 1.15rem; max-width: 100%;">GrepMind builds practical software products that bring people, automation, AI, infrastructure and learning into simpler digital experiences.</p>
+          <div class="home-hero-actions">
+            <button class="btn btn-primary" onclick="document.getElementById('product-featured').scrollIntoView({behavior: 'smooth'})">
+              Explore Products
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" style="margin-left: 0.25rem;">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </button>
+            <button class="btn btn-secondary" onclick="document.getElementById('how-we-build').scrollIntoView({behavior: 'smooth'})">
+              See How We Build
+            </button>
+          </div>
+        </div>
+        <div style="display: flex; justify-content: center; align-items: center; position: relative;">
+          <!-- SVG Ecosystem Visualization -->
+          <svg viewBox="0 0 400 300" style="width: 100%; max-width: 380px;">
+            <defs>
+              <linearGradient id="edgeGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#10b981" />
+                <stop offset="100%" stop-color="#3b82f6" />
+              </linearGradient>
+            </defs>
+            <rect x="120" y="20" width="160" height="40" rx="8" fill="#ffffff" stroke="#059669" stroke-width="2"/>
+            <text x="200" y="45" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle" font-family="'Space Grotesk', sans-serif">GrepMind AI</text>
+            
+            <path d="M200 60 L200 90 M200 90 L80 90 M200 90 L320 90 M80 90 L80 120 M200 90 L200 120 M320 90 L320 120 M200 160 L200 190" stroke="url(#edgeGlow)" stroke-width="2" fill="none" stroke-dasharray="4,4"/>
+            
+            <rect x="20" y="120" width="120" height="40" rx="8" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
+            <text x="80" y="145" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle" font-family="'Space Grotesk', sans-serif">People</text>
+            
+            <rect x="140" y="120" width="120" height="40" rx="8" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
+            <text x="200" y="145" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle" font-family="'Space Grotesk', sans-serif">Ops</text>
+            
+            <rect x="260" y="120" width="120" height="40" rx="8" fill="#ffffff" stroke="#10b981" stroke-width="2"/>
+            <text x="320" y="145" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle" font-family="'Space Grotesk', sans-serif">Academy</text>
+            
+            <rect x="140" y="190" width="120" height="40" rx="8" fill="#ffffff" stroke="#0ea5e9" stroke-width="2"/>
+            <text x="200" y="215" font-size="12" font-weight="bold" fill="#0f172a" text-anchor="middle" font-family="'Space Grotesk', sans-serif">OpsQuest</text>
+          </svg>
+        </div>
+      </div>
+
+      <!-- TRUST STRIP -->
+      <div class="trust-strip">
+        <p style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase; margin-bottom: 1.5rem; letter-spacing: 1px;">Built with modern technologies</p>
+        <div style="display: flex; gap: 2.5rem; justify-content: center; flex-wrap: wrap; color: var(--text-secondary); font-weight: 600; font-size: 1.15rem; font-family: var(--font-display);">
+          <span>React</span> <span>TypeScript</span> <span>Kubernetes</span> <span>Docker</span> <span>AI/RAG</span> <span>PostgreSQL</span> <span>Redis</span> <span>Cloud</span>
+        </div>
+      </div>
+
+      <!-- FEATURED PRODUCTS -->
+      <div id="product-featured" style="margin-bottom: 3.5rem; text-align: center;">
+        <span class="vault-badge">FEATURED PRODUCTS</span>
+        <h3 style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--text-primary); margin-top: 0.75rem; margin-bottom: 1rem;">Products Designed Around Real Problems</h3>
+        <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 750px; margin: 0 auto; line-height: 1.7;">From people operations to infrastructure management and AI-powered workflows, GrepMind products are designed around practical problems faced by modern organizations and technology teams.</p>
+      </div>
+
+      <div class="architecture-layers-grid" style="margin-bottom: 6rem; gap: 2rem;">
+        <!-- GrepMind People -->
+        <article class="product-card">
+          <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 0.5rem;">PEOPLE OPERATIONS</span>
+          <h4 class="product-card-title">GrepMind People</h4>
+          <p style="font-weight: 700; color: var(--primary); font-size: 1.1rem; margin-bottom: 1rem;">From Hiring to Growth, Unified.</p>
+          <p style="color: var(--text-secondary); flex-grow: 1; line-height: 1.6; margin-bottom: 1.5rem;">A modern people-operations platform designed to help organizations manage the employee lifecycle through one connected workspace.</p>
+          
+          <div style="margin-bottom: 1.75rem;">
+            <p style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.75rem;">Capabilities</p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">Employee Mgmt</span>
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">Recruitment</span>
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">Onboarding</span>
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">Payroll</span>
+            </div>
+          </div>
+          
+          <div style="margin-bottom: 2rem; border-top: 1px solid rgba(15, 23, 42, 0.05); padding-top: 1.5rem;">
+            <p style="font-size: 0.85rem; color: var(--text-muted); font-family: monospace;">React · TypeScript · NestJS · PostgreSQL</p>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto;">
+            <span style="font-size: 0.8rem; font-weight: 700; color: #d97706; background: #fef3c7; padding: 0.4rem 0.8rem; border-radius: 6px;">In Development</span>
+            <button class="btn btn-secondary" style="padding: 0.5rem 1.25rem;" data-view="services" onclick="window.location.hash='services'">Explore &rarr;</button>
+          </div>
+        </article>
+
+        <!-- GrepMind Ops -->
+        <article class="product-card">
+          <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 0.5rem;">DEVOPS · SRE · PLATFORM</span>
+          <h4 class="product-card-title">GrepMind Ops</h4>
+          <p style="font-weight: 700; color: var(--primary); font-size: 1.1rem; margin-bottom: 1rem;">Operate Infrastructure with Intelligence.</p>
+          <p style="color: var(--text-secondary); flex-grow: 1; line-height: 1.6; margin-bottom: 1.5rem;">An intelligent operations platform designed to help DevOps, SRE and Platform teams understand, automate and manage modern infrastructure.</p>
+          
+          <div style="margin-bottom: 1.75rem;">
+            <p style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.75rem;">Capabilities</p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">Kubernetes</span>
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">GitOps</span>
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">AI RCA</span>
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">Observability</span>
+            </div>
+          </div>
+          
+          <div style="margin-bottom: 2rem; border-top: 1px solid rgba(15, 23, 42, 0.05); padding-top: 1.5rem;">
+            <p style="font-size: 0.85rem; color: var(--text-muted); font-family: monospace;">Kubernetes · Argo CD · FastAPI · AI/RAG</p>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto;">
+            <span style="font-size: 0.8rem; font-weight: 700; color: #d97706; background: #fef3c7; padding: 0.4rem 0.8rem; border-radius: 6px;">In Development</span>
+            <button class="btn btn-secondary" style="padding: 0.5rem 1.25rem;" data-view="services" onclick="window.location.hash='services'">Explore &rarr;</button>
+          </div>
+        </article>
+
+        <!-- GrepMind AI -->
+        <article class="product-card">
+          <span style="font-size: 0.75rem; font-weight: 700; letter-spacing: 1px; color: var(--text-muted); margin-bottom: 0.5rem;">ARTIFICIAL INTELLIGENCE</span>
+          <h4 class="product-card-title">GrepMind AI</h4>
+          <p style="font-weight: 700; color: var(--primary); font-size: 1.1rem; margin-bottom: 1rem;">Build AI Experiences That Work With You.</p>
+          <p style="color: var(--text-secondary); flex-grow: 1; line-height: 1.6; margin-bottom: 1.5rem;">An AI platform for building practical assistants and intelligent application workflows using language models, voice, retrieval and automation.</p>
+          
+          <div style="margin-bottom: 1.75rem;">
+            <p style="font-weight: 700; font-size: 0.85rem; color: var(--text-primary); margin-bottom: 0.75rem;">Capabilities</p>
+            <div style="display: flex; gap: 0.5rem; flex-wrap: wrap;">
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">Conversational AI</span>
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">Voice</span>
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">Agents</span>
+              <span class="title-badge" style="background: rgba(15, 23, 42, 0.04); color: var(--text-secondary); border: none;">RAG</span>
+            </div>
+          </div>
+          
+          <div style="margin-bottom: 2rem; border-top: 1px solid rgba(15, 23, 42, 0.05); padding-top: 1.5rem;">
+            <p style="font-size: 0.85rem; color: var(--text-muted); font-family: monospace;">LLMs · LlamaIndex · Vector Databases</p>
+          </div>
+
+          <div style="display: flex; align-items: center; justify-content: space-between; margin-top: auto;">
+            <span style="font-size: 0.8rem; font-weight: 700; color: #6d28d9; background: #ede9fe; padding: 0.4rem 0.8rem; border-radius: 6px;">Platform / R&D</span>
+            <button class="btn btn-secondary" style="padding: 0.5rem 1.25rem;" data-view="services" onclick="window.location.hash='services'">Explore &rarr;</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- VISUALIZATIONS -->
+      <div style="margin-bottom: 3.5rem; text-align: center;">
+        <h3 style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--text-primary); margin-bottom: 1rem;">See the Products in Action</h3>
+      </div>
+      <div class="visuals-grid">
+        <div class="visual-mockup">
+          <div style="padding: 1.25rem; border-bottom: 1px solid var(--border-color); background: #f8fafc; font-weight: 700; font-family: var(--font-display); color: var(--text-primary); text-align: center;">GrepMind People Architecture</div>
+          <img src="https://lh3.googleusercontent.com/d/1UdiY2tfqBszlWWOpnNkw0DXe7yH8_yhN" alt="GrepMind People Diagram">
+        </div>
+        <div class="visual-mockup">
+          <div style="padding: 1.25rem; border-bottom: 1px solid var(--border-color); background: #f8fafc; font-weight: 700; font-family: var(--font-display); color: var(--text-primary); text-align: center;">GrepMind Ops Dashboard</div>
+          <img src="https://lh3.googleusercontent.com/d/12AcgGGiJPis_QDQe4iQnBzzMJCFiNrP0" alt="GrepMind Ops Dashboard Preview">
+        </div>
+        <div class="visual-mockup">
+          <div style="padding: 1.25rem; border-bottom: 1px solid var(--border-color); background: #f8fafc; font-weight: 700; font-family: var(--font-display); color: var(--text-primary); text-align: center;">GrepMind AI Architecture</div>
+          <img src="https://lh3.googleusercontent.com/d/1jNNwikAl6YKud-4bgIU9q9EbzhQDkJ6S" alt="GrepMind AI Diagram">
+        </div>
+      </div>
+
+      <!-- PRODUCT ECOSYSTEM -->
+      <div style="margin-bottom: 3.5rem; text-align: center;">
+        <span class="vault-badge">MORE FROM GREPMIND</span>
+        <h3 style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--text-primary); margin-top: 0.75rem; margin-bottom: 1rem;">An Ecosystem That Keeps Growing</h3>
+      </div>
+
+      <div class="skills-catalog-grid" style="margin-bottom: 6rem;">
+        <article class="skills-category-card" style="padding: 2rem;">
+          <div class="skills-category-title" style="font-size: 1.2rem; font-family: var(--font-display);">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 14l9-5-9-5-9 5 9 5z"/><path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"/><path d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/></svg>
+            GrepMind Academy
+          </div>
+          <p style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin: 1rem 0;">Learn Technology by Understanding How It Works.</p>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">Practical technology learning experiences covering cloud, DevOps, AI, Linux, Kubernetes and modern engineering.</p>
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <span style="font-size: 0.8rem; font-weight: 800; letter-spacing: 1px; color: var(--primary);">ACTIVE</span>
+            <button class="btn btn-secondary" style="padding: 0.5rem 1.25rem;" data-view="courses">Explore &rarr;</button>
+          </div>
+        </article>
+
+        <article class="skills-category-card" style="padding: 2rem;">
+          <div class="skills-category-title" style="font-size: 1.2rem; font-family: var(--font-display);">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M14.752 11.168l-3.197-2.132A1 1 0 0010 9.87v4.263a1 1 0 001.555.832l3.197-2.132a1 1 0 000-1.664z"/><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+            GrepMind OpsQuest
+          </div>
+          <p style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin: 1rem 0;">Turn DevOps Learning Into a Mission.</p>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">A challenge-driven learning experience where developers learn infrastructure and operations concepts through practical missions.</p>
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <span style="font-size: 0.8rem; font-weight: 800; letter-spacing: 1px; color: #d97706;">EXPERIMENTAL</span>
+            <a href="https://sites.google.com/view/final-grepmind-design/opsquest" target="_parent" class="btn btn-secondary" style="padding: 0.5rem 1.25rem;">Start &rarr;</a>
+          </div>
+        </article>
+
+        <article class="skills-category-card" style="padding: 2rem;">
+          <div class="skills-category-title" style="font-size: 1.2rem; font-family: var(--font-display);">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            GrepMind Labs
+          </div>
+          <p style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin: 1rem 0;">Where We Experiment With What's Next.</p>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6; margin-bottom: 2rem;">An experimental space for exploring AI, automation, cloud infrastructure, developer tools and emerging technologies.</p>
+          <div style="display: flex; align-items: center; justify-content: space-between;">
+            <span style="font-size: 0.8rem; font-weight: 800; letter-spacing: 1px; color: #6d28d9;">R&D</span>
+            <button class="btn btn-secondary" style="padding: 0.5rem 1.25rem;" data-view="portfolio" onclick="window.location.hash='portfolio'">Explore &rarr;</button>
+          </div>
+        </article>
+      </div>
+
+      <!-- BUSINESS VALUE & DEVELOPER SECTION -->
+      <div id="how-we-build" class="dev-section">
+        <div style="text-align: center; margin-bottom: 4rem;">
+          <span class="vault-badge" style="background: rgba(15, 23, 42, 0.05); color: var(--text-primary);">ENGINEERED FOR SCALE</span>
+          <h3 style="font-family: var(--font-display); font-size: 2.2rem; font-weight: 700; color: var(--text-primary); margin-top: 0.75rem; margin-bottom: 1rem;">Built for Developers. Designed for People.</h3>
+          <p style="font-size: 1.1rem; color: var(--text-secondary); max-width: 750px; margin: 0 auto; line-height: 1.7;">GrepMind products are engineered with modern application architecture, automation, observability and scalable infrastructure in mind.</p>
+        </div>
+        
+        <div class="architecture-layers-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem;">
+          <div class="product-card" style="padding: 2rem; align-items: center; text-align: center; background: #ffffff;">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--primary)" stroke-width="2" style="margin-bottom: 1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; font-family: var(--font-display);">API First</h4>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5;">Designed around clean interfaces and robust service boundaries.</p>
+          </div>
+          <div class="product-card" style="padding: 2rem; align-items: center; text-align: center; background: #ffffff;">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--primary)" stroke-width="2" style="margin-bottom: 1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"/></svg>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; font-family: var(--font-display);">Automation First</h4>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5;">Repeatable workflows are automated seamlessly wherever practical.</p>
+          </div>
+          <div class="product-card" style="padding: 2rem; align-items: center; text-align: center; background: #ffffff;">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--primary)" stroke-width="2" style="margin-bottom: 1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"/></svg>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; font-family: var(--font-display);">Observable</h4>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5;">Deep visibility into infrastructure health, performance, and activity.</p>
+          </div>
+          <div class="product-card" style="padding: 2rem; align-items: center; text-align: center; background: #ffffff;">
+            <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="var(--primary)" stroke-width="2" style="margin-bottom: 1.25rem;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            <h4 style="font-size: 1.15rem; margin-bottom: 0.75rem; font-family: var(--font-display);">Secure by Design</h4>
+            <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.5;">Authentication, RBAC and strict auditability built in from the start.</p>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
     <!-- SECTION 2: COURSES HUB WITH EMBEDDED DRIVE VIEW -->
     <section id="courses-section" class="page-section">
       <div class="section-header">
         <span class="section-badge">Gated Vault</span>
         <h2 class="section-title">DevOps & AI Course Access Hub</h2>
-        <p class="section-subtitle">Select a course module track. Launching a track embeds a restricted Google Drive document viewer directly in the viewport.</p>
+        <p class="section-subtitle">Select a course module track. Launching a track embeds a restricted Google Drive
+          document viewer directly in the viewport.</p>
       </div>
 
       <!-- Optional course search / filtering toolbar -->
@@ -2100,7 +2486,8 @@
           <button class="filter-btn" onclick="filterCourses('ML')">ML</button>
         </div>
         <span class="vault-duration" style="color: var(--text-muted); font-weight: 700;" id="sheet-status-badge">
-          <span class="pulse-dot" style="width: 8px; height: 8px; background-color: var(--primary); border-radius: 50%;"></span>
+          <span class="pulse-dot"
+            style="width: 8px; height: 8px; background-color: var(--primary); border-radius: 50%;"></span>
           Database Online
         </span>
       </div>
@@ -2117,31 +2504,42 @@
             <div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap;">
               <button class="btn btn-secondary" onclick="closeViewer()" style="padding: 0.6rem 1.25rem;">
                 <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18" />
                 </svg>
                 Back to Course Menu
               </button>
-              <button class="btn btn-vault btn-vault-register" id="viewer-register-btn" onclick="triggerViewerRegister()" style="padding: 0.6rem 1.25rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem;">
+              <button class="btn btn-vault btn-vault-register" id="viewer-register-btn"
+                onclick="triggerViewerRegister()"
+                style="padding: 0.6rem 1.25rem; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 0.35rem;">
                 <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 Register for Course
               </button>
             </div>
             <div style="text-align: right;">
-              <h3 id="viewer-title" style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700;">Kubernetes Operations</h3>
-              <p id="viewer-subtitle" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Gated Resource Folder</p>
+              <h3 id="viewer-title" style="font-family: var(--font-display); font-size: 1.25rem; font-weight: 700;">
+                Kubernetes Operations</h3>
+              <p id="viewer-subtitle" style="font-size: 0.85rem; color: var(--text-muted); font-weight: 600;">Gated
+                Resource Folder</p>
             </div>
           </div>
 
           <!-- View Toggle Bar -->
           <div class="viewer-toggle-bar">
             <button class="toggle-view-btn active" id="toggle-handbook-btn" onclick="toggleViewerSection('handbook')">
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25"/></svg>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
+              </svg>
               Interactive Handbook
             </button>
             <button class="toggle-view-btn" id="toggle-drive-btn" onclick="toggleViewerSection('drive')">
-              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z"/></svg>
+              <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M2.25 15a4.5 4.5 0 004.5 4.5H18a3.75 3.75 0 001.332-7.257 3 3 0 00-3.758-3.848 5.25 5.25 0 00-10.233 2.33A4.502 4.502 0 002.25 15z" />
+              </svg>
               Google Drive Folder
             </button>
           </div>
@@ -2152,10 +2550,18 @@
           </div>
 
           <!-- Google Drive Folder Iframe Area -->
-          <div id="gdrive-iframe-container" style="display: none; flex-direction: column; gap: 1.5rem; flex-grow: 1; height: 100%;">
+          <div id="gdrive-iframe-container"
+            style="display: none; flex-direction: column; gap: 1.5rem; flex-grow: 1; height: 100%;">
             <div class="gdrive-info-alert" style="margin-bottom: 0;">
-              <svg viewBox="0 0 24 24" style="width: 20px; height: 20px; stroke: currentColor; fill: none; flex-shrink: 0;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" stroke-width="2"/></svg>
-              <p><strong>Identity Access Gateway:</strong> The document vault is strictly protected. If you see a "You need access" prompt, click <strong>Request Access</strong>. The administrators will grant permission to your Google Workspace account shortly.</p>
+              <svg viewBox="0 0 24 24"
+                style="width: 20px; height: 20px; stroke: currentColor; fill: none; flex-shrink: 0;">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"
+                  stroke-width="2" />
+              </svg>
+              <p><strong>Identity Access Gateway:</strong> The document vault is strictly protected. If you see a "You
+                need access" prompt, click <strong>Request Access</strong>. The administrators will grant permission to
+                your Google Workspace account shortly.</p>
             </div>
             <div class="gdrive-iframe-container" id="gdrive-iframe-holder" style="flex-grow: 1; height: 500px;">
               <!-- Google Drive Iframe loaded on click -->
@@ -2582,17 +2988,23 @@
       <div class="section-header">
         <span class="section-badge">GrepMind Platform</span>
         <h2 class="section-title">AI-Native Kubernetes Operations</h2>
-        <p class="section-subtitle">Provision, manage, analyze, and safely remediate infrastructure environments powered by intelligent operational engine components.</p>
+        <p class="section-subtitle">Provision, manage, analyze, and safely remediate infrastructure environments powered
+          by intelligent operational engine components.</p>
       </div>
 
       <!-- 1. PRODUCT HERO & WHAT IS GREPMIND -->
       <div class="services-hero-grid">
         <div class="services-intro-card">
           <span class="vault-badge" style="width: fit-content; margin-bottom: 0.25rem;">Intelligent Core</span>
-          <h3 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary);">What is GrepMind?</h3>
-          <p class="about-paragraph" style="margin-bottom: 0.5rem;">GrepMind is a unified Kubernetes operations platform designed to provision, manage, monitor, analyze, and safely remediate modern infrastructure systems across cloud, on-prem, hybrid, and edge platforms.</p>
-          <p class="about-paragraph">By combining lifecycle management with AI-powered root-cause analysis (RCA), GrepMind transforms traditional reactive operations into automated operational intelligence.</p>
-          
+          <h3
+            style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary);">
+            What is GrepMind?</h3>
+          <p class="about-paragraph" style="margin-bottom: 0.5rem;">GrepMind is a unified Kubernetes operations platform
+            designed to provision, manage, monitor, analyze, and safely remediate modern infrastructure systems across
+            cloud, on-prem, hybrid, and edge platforms.</p>
+          <p class="about-paragraph">By combining lifecycle management with AI-powered root-cause analysis (RCA),
+            GrepMind transforms traditional reactive operations into automated operational intelligence.</p>
+
           <ul class="services-list-items">
             <li>Kubernetes Lifecycle</li>
             <li>Infrastructure Automation</li>
@@ -2607,7 +3019,8 @@
 
         <div class="services-diagram-frame">
           <!-- Infographic diagram loading from workspace directory -->
-          <img class="services-diagram-img" id="architecture-image-display" src="grepmind_product_architecture.png" alt="GrepMind Product Platform Architecture Diagram">
+          <img class="services-diagram-img" id="architecture-image-display" src="grepmind_product_architecture.png"
+            alt="GrepMind Product Platform Architecture Diagram">
         </div>
       </div>
 
@@ -2616,11 +3029,14 @@
         <div class="challenge-column">
           <h3>
             <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"/>
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z" />
             </svg>
             The Problem GrepMind Solves
           </h3>
-          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.25rem; font-weight: 600;">Kubernetes clusters generate massive telemetry, thousands of alerts, and complex dependencies. Teams struggle with:</p>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.25rem; font-weight: 600;">
+            Kubernetes clusters generate massive telemetry, thousands of alerts, and complex dependencies. Teams
+            struggle with:</p>
           <ul class="bullet-list challenge-list">
             <li><strong>Slow Incident Response:</strong> High MTTR due to manual diagnostic queries.</li>
             <li><strong>Alert Fatigue:</strong> Duplicate warnings and noise masks critical outages.</li>
@@ -2628,15 +3044,18 @@
             <li><strong>Risky Remediations:</strong> Direct production changes without verified guardrails.</li>
           </ul>
         </div>
-        
+
         <div class="solution-column">
           <h3>
             <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043a3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z"/>
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M9 12.75L11.25 15 15 9.75M21 12c0 1.268-.63 2.39-1.593 3.068a3.745 3.745 0 01-1.043 3.296 3.745 3.745 0 01-3.296 1.043A3.745 3.745 0 0112 21c-1.268 0-2.39-.63-3.068-1.593a3.746 3.746 0 01-3.296-1.043 3.745 3.745 0 01-1.043-3.296A3.745 3.745 0 013 12c0-1.268.63-2.39 1.593-3.068a3.745 3.745 0 011.043-3.296 3.746 3.746 0 013.296-1.043a3.746 3.746 0 0112 3c1.268 0 2.39.63 3.068 1.593a3.746 3.746 0 013.296 1.043 3.746 3.746 0 011.043 3.296A3.745 3.745 0 0121 12z" />
             </svg>
             The GrepMind Solution
           </h3>
-          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.25rem; font-weight: 600;">GrepMind implements an automated operational intelligence layer that correlates alerts and automates lifecycle steps:</p>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); margin-bottom: 1.25rem; font-weight: 600;">
+            GrepMind implements an automated operational intelligence layer that correlates alerts and automates
+            lifecycle steps:</p>
           <ul class="bullet-list solution-list">
             <li><strong>Intelligent Context:</strong> Pre-aggregates related logs, topology, and node logs.</li>
             <li><strong>Explainable failures:</strong> Discovers root cause and impacts with AI correlation.</li>
@@ -2649,8 +3068,11 @@
       <!-- 3. SIX CORE ARCHITECTURE LAYERS -->
       <div style="margin-bottom: 2.5rem; text-align: center;">
         <span class="vault-badge">Core Architecture</span>
-        <h3 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem; margin-bottom: 0.75rem;">Deep-Dive Platform Layers</h3>
-        <p style="font-size: 1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Six specialized operational modules cooperating to maintain high availability and automated compliance.</p>
+        <h3
+          style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem; margin-bottom: 0.75rem;">
+          Deep-Dive Platform Layers</h3>
+        <p style="font-size: 1rem; color: var(--text-secondary); max-width: 600px; margin: 0 auto;">Six specialized
+          operational modules cooperating to maintain high availability and automated compliance.</p>
       </div>
 
       <div class="architecture-layers-grid">
@@ -2658,11 +3080,15 @@
         <article class="arch-layer-card">
           <div class="arch-layer-header">
             <div class="arch-layer-icon">
-              <svg viewBox="0 0 24 24"><path d="M5 19h14M5 12h14M5 5h14"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M5 19h14M5 12h14M5 5h14" />
+              </svg>
             </div>
             <h4 class="arch-layer-title">1. Provisioning & Lifecycle</h4>
           </div>
-          <p class="arch-layer-desc">Automates cluster lifecycle stages. Deploys control plane topologies, node configurations, network plugins, storage backends, and scale expansions using kubeadm-based engine structures.</p>
+          <p class="arch-layer-desc">Automates cluster lifecycle stages. Deploys control plane topologies, node
+            configurations, network plugins, storage backends, and scale expansions using kubeadm-based engine
+            structures.</p>
           <ul class="arch-layer-bullets">
             <li>Bare Metal & Cloud Provisioning</li>
             <li>Automatic Node Onboarding</li>
@@ -2674,11 +3100,16 @@
         <article class="arch-layer-card">
           <div class="arch-layer-header">
             <div class="arch-layer-icon">
-              <svg viewBox="0 0 24 24"><path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"/><path d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                <path
+                  d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+              </svg>
             </div>
             <h4 class="arch-layer-title">2. Observability & Detection</h4>
           </div>
-          <p class="arch-layer-desc">Aggregates unified metric charts, event loops, topology mappings, and logs. Detects real-time anomalies (CrashLoopBackOff, OOMKilled, network pressures, deployment degradations).</p>
+          <p class="arch-layer-desc">Aggregates unified metric charts, event loops, topology mappings, and logs. Detects
+            real-time anomalies (CrashLoopBackOff, OOMKilled, network pressures, deployment degradations).</p>
           <ul class="arch-layer-bullets">
             <li>Real-Time Telemetry Harvesting</li>
             <li>Deployment Health Observability</li>
@@ -2690,11 +3121,15 @@
         <article class="arch-layer-card">
           <div class="arch-layer-header">
             <div class="arch-layer-icon">
-              <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg>
+              <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 16v-4M12 8h.01" />
+              </svg>
             </div>
             <h4 class="arch-layer-title">3. AI Gating & RCA Engine</h4>
           </div>
-          <p class="arch-layer-desc">Correlates alerts with dependency flows and cluster history. Pinpoints primary root cause, calculates confidence scores, and translates technical logs into human-readable action guides.</p>
+          <p class="arch-layer-desc">Correlates alerts with dependency flows and cluster history. Pinpoints primary root
+            cause, calculates confidence scores, and translates technical logs into human-readable action guides.</p>
           <ul class="arch-layer-bullets">
             <li>Context Enrichment pipelines</li>
             <li>AI Dependency Correlation</li>
@@ -2706,11 +3141,14 @@
         <article class="arch-layer-card">
           <div class="arch-layer-header">
             <div class="arch-layer-icon">
-              <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
             </div>
             <h4 class="arch-layer-title">4. Governance & Approval</h4>
           </div>
-          <p class="arch-layer-desc">Protects production workloads. Every proposed remediation includes a risk assessment report, audit trail setup, and execution preview pending human approval authorization.</p>
+          <p class="arch-layer-desc">Protects production workloads. Every proposed remediation includes a risk
+            assessment report, audit trail setup, and execution preview pending human approval authorization.</p>
           <ul class="arch-layer-bullets">
             <li>Risk Impact Analysis reports</li>
             <li>Human-in-the-loop Gates</li>
@@ -2722,11 +3160,15 @@
         <article class="arch-layer-card">
           <div class="arch-layer-header">
             <div class="arch-layer-icon">
-              <svg viewBox="0 0 24 24"><path d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+              </svg>
             </div>
             <h4 class="arch-layer-title">5. Controlled Execution</h4>
           </div>
-          <p class="arch-layer-desc">Executes targeted fixes safely through isolated loops. Restarts deployments, handles scaling rollbacks, cordons/drains failing nodes, and triggers custom infrastructure recovery routines.</p>
+          <p class="arch-layer-desc">Executes targeted fixes safely through isolated loops. Restarts deployments,
+            handles scaling rollbacks, cordons/drains failing nodes, and triggers custom infrastructure recovery
+            routines.</p>
           <ul class="arch-layer-bullets">
             <li>Remediation Isolation barriers</li>
             <li>Deployment Cordon & Rollbacks</li>
@@ -2738,11 +3180,15 @@
         <article class="arch-layer-card">
           <div class="arch-layer-header">
             <div class="arch-layer-icon">
-              <svg viewBox="0 0 24 24"><path d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"/></svg>
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+              </svg>
             </div>
             <h4 class="arch-layer-title">6. Verification & Memory</h4>
           </div>
-          <p class="arch-layer-desc">Performs health checks on restored workloads. Automatically logs resolution timelines, telemetry logs, and approval records inside the platform's local operational memory.</p>
+          <p class="arch-layer-desc">Performs health checks on restored workloads. Automatically logs resolution
+            timelines, telemetry logs, and approval records inside the platform's local operational memory.</p>
           <ul class="arch-layer-bullets">
             <li>Post-Recovery Health checks</li>
             <li>Incident Pattern Databases</li>
@@ -2755,8 +3201,11 @@
       <div class="operational-flow-container">
         <div style="text-align: center; margin-bottom: 3rem;">
           <span class="vault-badge" style="background: #ffffff; color: var(--primary);">End-to-End Flow</span>
-          <h3 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">Platform Execution Pipeline</h3>
-          <p style="font-size: 0.95rem; color: var(--text-secondary); max-width: 500px; margin: 0.25rem auto;">The chronological sequence of operational events managed automatically by GrepMind AI-Ops.</p>
+          <h3
+            style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">
+            Platform Execution Pipeline</h3>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); max-width: 500px; margin: 0.25rem auto;">The
+            chronological sequence of operational events managed automatically by GrepMind AI-Ops.</p>
         </div>
 
         <div class="flow-timeline-vertical">
@@ -2765,7 +3214,8 @@
             <div class="flow-step-dot"></div>
             <div class="flow-step-body">
               <div class="flow-step-title">Step 1: Signal Collection & Monitoring</div>
-              <div class="flow-step-desc">GrepMind collects continuous metrics, events, namespace topologies, and pod configurations across the active cluster pools.</div>
+              <div class="flow-step-desc">GrepMind collects continuous metrics, events, namespace topologies, and pod
+                configurations across the active cluster pools.</div>
             </div>
           </div>
 
@@ -2774,7 +3224,8 @@
             <div class="flow-step-dot"></div>
             <div class="flow-step-body">
               <div class="flow-step-title">Step 2: Real-time Incident Detection</div>
-              <div class="flow-step-desc">Anomalies like CrashLoopBackOff, OOMKilled events, deployment degradations, and node outages are detected instantly.</div>
+              <div class="flow-step-desc">Anomalies like CrashLoopBackOff, OOMKilled events, deployment degradations,
+                and node outages are detected instantly.</div>
             </div>
           </div>
 
@@ -2783,7 +3234,8 @@
             <div class="flow-step-dot"></div>
             <div class="flow-step-body">
               <div class="flow-step-title">Step 3: Context Enrichment & AI Correlation</div>
-              <div class="flow-step-desc">Enrichment engines collect logs, dependency charts, and state metrics. AI correlates indicators to isolate failure sources.</div>
+              <div class="flow-step-desc">Enrichment engines collect logs, dependency charts, and state metrics. AI
+                correlates indicators to isolate failure sources.</div>
             </div>
           </div>
 
@@ -2792,7 +3244,8 @@
             <div class="flow-step-dot"></div>
             <div class="flow-step-body">
               <div class="flow-step-title">Step 4: Root Cause Analysis (RCA)</div>
-              <div class="flow-step-desc">Generates human-readable RCA reports, determining probable failure reasons, severity levels, confidence, and affected scopes.</div>
+              <div class="flow-step-desc">Generates human-readable RCA reports, determining probable failure reasons,
+                severity levels, confidence, and affected scopes.</div>
             </div>
           </div>
 
@@ -2801,7 +3254,8 @@
             <div class="flow-step-dot"></div>
             <div class="flow-step-body">
               <div class="flow-step-title">Step 5: Recommendation & Approval Workflow</div>
-              <div class="flow-step-desc">Formulates safe remediation actions (restarts, scales, node drains) and triggers a human-in-the-loop approval gate request.</div>
+              <div class="flow-step-desc">Formulates safe remediation actions (restarts, scales, node drains) and
+                triggers a human-in-the-loop approval gate request.</div>
             </div>
           </div>
 
@@ -2810,7 +3264,8 @@
             <div class="flow-step-dot"></div>
             <div class="flow-step-body">
               <div class="flow-step-title">Step 6: Controlled Execution & Verification</div>
-              <div class="flow-step-desc">Executes approved operations through isolated channels. Recovery validation checks cluster logs and pod health before completion.</div>
+              <div class="flow-step-desc">Executes approved operations through isolated channels. Recovery validation
+                checks cluster logs and pod health before completion.</div>
             </div>
           </div>
 
@@ -2819,7 +3274,8 @@
             <div class="flow-step-dot"></div>
             <div class="flow-step-body">
               <div class="flow-step-title">Step 7: Audit Tracking & Operational Memory</div>
-              <div class="flow-step-desc">Stores resolution timelines, approval histories, and metrics patterns inside persistent local operational memory.</div>
+              <div class="flow-step-desc">Stores resolution timelines, approval histories, and metrics patterns inside
+                persistent local operational memory.</div>
             </div>
           </div>
         </div>
@@ -2828,35 +3284,49 @@
       <!-- 5. ENTERPRISE CAPABILITIES -->
       <div style="margin-bottom: 2.5rem; text-align: center;">
         <span class="vault-badge">Operational Safeguards</span>
-        <h3 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">Enterprise Capabilities</h3>
+        <h3
+          style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">
+          Enterprise Capabilities</h3>
       </div>
 
       <div class="enterprise-pillars-row">
         <!-- Card 1 -->
         <div class="enterprise-pillar-card">
           <div class="enterprise-icon-circle">
-            <svg viewBox="0 0 24 24"><path d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+            </svg>
           </div>
           <h4 class="enterprise-pillar-title">Platform Security</h4>
-          <p class="enterprise-pillar-desc">Leverages role-based access control (RBAC), multi-factor approval gates, immutable audit trails, and strict namespace governance boundaries.</p>
+          <p class="enterprise-pillar-desc">Leverages role-based access control (RBAC), multi-factor approval gates,
+            immutable audit trails, and strict namespace governance boundaries.</p>
         </div>
 
         <!-- Card 2 -->
         <div class="enterprise-pillar-card">
           <div class="enterprise-icon-circle">
-            <svg viewBox="0 0 24 24"><path d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+            </svg>
           </div>
           <h4 class="enterprise-pillar-title">Reliability Assured</h4>
-          <p class="enterprise-pillar-desc">Features continuous telemetry feeds, real-time error alerts, isolated execution sandboxes, and post-action verification loops.</p>
+          <p class="enterprise-pillar-desc">Features continuous telemetry feeds, real-time error alerts, isolated
+            execution sandboxes, and post-action verification loops.</p>
         </div>
 
         <!-- Card 3 -->
         <div class="enterprise-pillar-card">
           <div class="enterprise-icon-circle">
-            <svg viewBox="0 0 24 24"><path d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+            </svg>
           </div>
           <h4 class="enterprise-pillar-title">Elastic Scalability</h4>
-          <p class="enterprise-pillar-desc">Engineered for hybrid infrastructure layouts, multi-cluster federations, edge nodes tracking, and massive telemetry volumes.</p>
+          <p class="enterprise-pillar-desc">Engineered for hybrid infrastructure layouts, multi-cluster federations,
+            edge nodes tracking, and massive telemetry volumes.</p>
         </div>
       </div>
     </section>
@@ -3140,7 +3610,8 @@
         .award-badge-card:hover {
           transform: translateY(-3px);
           box-shadow: var(--shadow-md);
-          border-color: #f59e0b; /* Golden border highlight */
+          border-color: #f59e0b;
+          /* Golden border highlight */
         }
 
         .award-icon-box {
@@ -3236,7 +3707,8 @@
       <div class="section-header" style="margin-bottom: 3rem;">
         <span class="section-badge">Platform Architect</span>
         <h2 class="section-title">Professional Systems Portfolio</h2>
-        <p class="section-subtitle">Core expertise, infrastructure skills inventory, and active platform projects engineered by Srikanta Nayak.</p>
+        <p class="section-subtitle">Core expertise, infrastructure skills inventory, and active platform projects
+          engineered by Srikanta Nayak.</p>
       </div>
 
       <!-- 1. PROFILE HEADER CARD WITH AVATAR IMAGE -->
@@ -3244,7 +3716,8 @@
         <div class="avatar-container">
           <div class="avatar-frame">
             <!-- Dynamic Avatar loading from local file or Drive ID -->
-            <img class="avatar-image" id="profile-avatar-img" src="srikanta_avatar.png" alt="Srikanta Nayak Profile Photo">
+            <img class="avatar-image" id="profile-avatar-img" src="srikanta_avatar.png"
+              alt="Srikanta Nayak Profile Photo">
           </div>
         </div>
 
@@ -3254,20 +3727,36 @@
             <span class="title-badge" style="background: #ecfdf5; color: var(--primary);">Open to Global Remote</span>
           </div>
           <h3 class="profile-name">Srikanta Nayak</h3>
-          <p style="font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-top: -0.25rem; line-height: 1.4;">Senior DevOps Engineer | Platform Engineer | Kubernetes | Multi-Cloud | SRE | AI Ops | Cloud Native Architect</p>
-          <p class="profile-tagline">Building Intelligent Cloud-Native Platforms Through Kubernetes, Multi-Cloud Infrastructure, Observability, Automation, and AI Ops.</p>
-          
+          <p
+            style="font-size: 1.05rem; font-weight: 700; color: var(--primary); margin-top: -0.25rem; line-height: 1.4;">
+            Senior DevOps Engineer | Platform Engineer | Kubernetes | Multi-Cloud | SRE | AI Ops | Cloud Native
+            Architect</p>
+          <p class="profile-tagline">Building Intelligent Cloud-Native Platforms Through Kubernetes, Multi-Cloud
+            Infrastructure, Observability, Automation, and AI Ops.</p>
+
           <div class="profile-contact-actions">
-            <a href="mailto:team@grepmind.com" class="footer-social-btn" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
-              <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:2;"><path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <a href="mailto:team@grepmind.com" class="footer-social-btn"
+              style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
+              <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:none; stroke:currentColor; stroke-width:2;">
+                <path
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+              </svg>
               Email Srikanta
             </a>
-            <a href="https://www.linkedin.com/in/srikanta-nayak-80881940a" target="_blank" rel="noopener noreferrer" class="footer-social-btn" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
-              <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+            <a href="https://www.linkedin.com/in/srikanta-nayak-80881940a" target="_blank" rel="noopener noreferrer"
+              class="footer-social-btn" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
+              <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor;">
+                <path
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+              </svg>
               LinkedIn Profile
             </a>
-            <a href="https://github.com/srikanta1219" target="_blank" rel="noopener noreferrer" class="footer-social-btn" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
-              <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor;"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+            <a href="https://github.com/srikanta1219" target="_blank" rel="noopener noreferrer"
+              class="footer-social-btn" style="padding: 0.6rem 1.25rem; font-size: 0.85rem;">
+              <svg viewBox="0 0 24 24" style="width:16px; height:16px; fill:currentColor;">
+                <path
+                  d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
               GitHub Code
             </a>
           </div>
@@ -3278,22 +3767,33 @@
       <div class="portfolio-split-grid">
         <div class="portfolio-about-box" style="line-height: 1.7;">
           <h3>About Me</h3>
-          <p class="about-paragraph" style="margin-bottom: 1rem;">Experienced DevOps and Platform Engineer with 10+ years of professional experience in cloud-native infrastructure, Kubernetes operations, Platform Engineering, Site Reliability Engineering (SRE), AI Ops, observability, and automation. Passionate about designing scalable, secure, and highly available platforms across on-premises, cloud, and hybrid environments.</p>
-          <p class="about-paragraph">Strong background in Kubernetes, CI/CD, GitOps, Infrastructure as Code, cloud architecture, AI infrastructure, and operational excellence. Srikanta is the creator of <strong>GrepMind</strong>, an AI-powered Kubernetes operations and observability platform focused on intelligent troubleshooting, automation, and AI-assisted operational workflows.</p>
+          <p class="about-paragraph" style="margin-bottom: 1rem;">Experienced DevOps and Platform Engineer with 10+
+            years of professional experience in cloud-native infrastructure, Kubernetes operations, Platform
+            Engineering, Site Reliability Engineering (SRE), AI Ops, observability, and automation. Passionate about
+            designing scalable, secure, and highly available platforms across on-premises, cloud, and hybrid
+            environments.</p>
+          <p class="about-paragraph">Strong background in Kubernetes, CI/CD, GitOps, Infrastructure as Code, cloud
+            architecture, AI infrastructure, and operational excellence. Srikanta is the creator of
+            <strong>GrepMind</strong>, an AI-powered Kubernetes operations and observability platform focused on
+            intelligent troubleshooting, automation, and AI-assisted operational workflows.</p>
         </div>
       </div>
 
       <!-- 3. DETAILED SKILLS CATALOG -->
       <div style="margin-bottom: 2.5rem; text-align: center;">
         <span class="vault-badge">Skills Inventory</span>
-        <h3 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">Core Expertise & Technologies</h3>
+        <h3
+          style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">
+          Core Expertise & Technologies</h3>
       </div>
 
       <div class="skills-catalog-grid">
         <!-- Core Expertise -->
         <article class="skills-category-card" style="grid-column: span 2;">
           <div class="skills-category-title">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
+            </svg>
             Core Expertise
           </div>
           <div class="skills-tag-list">
@@ -3317,7 +3817,9 @@
         <!-- Cloud Platforms -->
         <article class="skills-category-card">
           <div class="skills-category-title">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
+            </svg>
             Cloud Platforms
           </div>
           <div class="skills-tag-list">
@@ -3332,7 +3834,10 @@
         <!-- Containers & Orchestration -->
         <article class="skills-category-card">
           <div class="skills-category-title">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2"/><path d="M9 3v18M15 3v18M3 9h18M3 15h18"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="3" y="3" width="18" height="18" rx="2" stroke-width="2" />
+              <path d="M9 3v18M15 3v18M3 9h18M3 15h18" />
+            </svg>
             Containers & Orchestration
           </div>
           <div class="skills-tag-list">
@@ -3352,7 +3857,10 @@
         <!-- DevOps & Automation -->
         <article class="skills-category-card">
           <div class="skills-category-title">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path
+                d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
+            </svg>
             DevOps & Automation
           </div>
           <div class="skills-tag-list">
@@ -3371,7 +3879,10 @@
         <!-- Monitoring & Observability -->
         <article class="skills-category-card">
           <div class="skills-category-title">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path
+                d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 002 2h2a2 2 0 002-2z" />
+            </svg>
             Monitoring & Observability
           </div>
           <div class="skills-tag-list">
@@ -3389,7 +3900,10 @@
         <!-- AI & LLM Technologies -->
         <article class="skills-category-card">
           <div class="skills-category-title">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9.663 17h4.673M12 3v1m6.364.364l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path
+                d="M9.663 17h4.673M12 3v1m6.364.364l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+            </svg>
             AI & LLM Technologies
           </div>
           <div class="skills-tag-list">
@@ -3407,7 +3921,11 @@
         <!-- AI Models -->
         <article class="skills-category-card">
           <div class="skills-category-title">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path
+                d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z" />
+              <path d="M3.27 6.96L12 12.01l8.73-5.05M12 22.08V12" />
+            </svg>
             AI Models & SDKs
           </div>
           <div class="skills-tag-list">
@@ -3426,7 +3944,9 @@
         <!-- Programming & Scripting -->
         <article class="skills-category-card">
           <div class="skills-category-title">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+            </svg>
             Programming & Scripting
           </div>
           <div class="skills-tag-list">
@@ -3444,7 +3964,10 @@
         <div class="featured-project-details">
           <span class="vault-badge" style="background: #ffffff; color: var(--primary);">Creator & Core Architect</span>
           <h4>GrepMind – AI-Powered Kubernetes Operations Platform</h4>
-          <p class="featured-project-desc">A cloud-native AI Ops platform designed for Kubernetes provisioning, observability, intelligent troubleshooting, AI-assisted Root Cause Analysis (RCA), deployment intelligence, multi-cluster management, RBAC governance, audit logging, and operational automation across on-premises, cloud, and hybrid environments.</p>
+          <p class="featured-project-desc">A cloud-native AI Ops platform designed for Kubernetes provisioning,
+            observability, intelligent troubleshooting, AI-assisted Root Cause Analysis (RCA), deployment intelligence,
+            multi-cluster management, RBAC governance, audit logging, and operational automation across on-premises,
+            cloud, and hybrid environments.</p>
           <div class="profile-contact-actions" style="margin-top: 1rem;">
             <button class="btn btn-primary" data-view="services" style="padding: 0.65rem 1.35rem; font-size: 0.85rem;">
               View Platform Specifications
@@ -3452,54 +3975,112 @@
           </div>
         </div>
 
-        <div class="featured-project-highlights-grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem;">
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Multi-Cloud Kubernetes Management</span>
+        <div class="featured-project-highlights-grid"
+          style="grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.75rem;">
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Multi-Cloud Kubernetes
+              Management</span>
           </div>
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">On-Premises & Hybrid Cloud Support</span>
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">On-Premises & Hybrid Cloud
+              Support</span>
           </div>
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
             <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">AI-Assisted RCA</span>
           </div>
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">LLM-Powered Troubleshooting</span>
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">LLM-Powered
+              Troubleshooting</span>
           </div>
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Kubernetes Observability</span>
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Kubernetes
+              Observability</span>
           </div>
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Centralized Monitoring</span>
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Centralized
+              Monitoring</span>
           </div>
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">RBAC & Security Governance</span>
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">RBAC & Security
+              Governance</span>
           </div>
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
             <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Audit Logging</span>
           </div>
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">GPU/CPU Node Management</span>
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">GPU/CPU Node
+              Management</span>
           </div>
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
             <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Deployment Automation</span>
           </div>
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Multi-Cluster Operations</span>
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Multi-Cluster
+              Operations</span>
           </div>
-          <div class="highlight-item" style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3" style="flex-shrink: 0;"><path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Production & Critical Support</span>
+          <div class="highlight-item"
+            style="padding: 0.85rem 1.15rem; flex-direction: row; align-items: center; gap: 0.75rem;">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="var(--primary)" stroke-width="3"
+              style="flex-shrink: 0;">
+              <path d="M5 13l4 4L19 7" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+            <span style="font-size: 0.88rem; font-weight: 600; color: var(--text-primary);">Production & Critical
+              Support</span>
           </div>
         </div>
       </div>
@@ -3507,8 +4088,11 @@
       <!-- Case Studies Row -->
       <div style="margin-bottom: 2.5rem; text-align: center;">
         <span class="vault-badge">Case Studies</span>
-        <h3 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">Production Systems Case Studies</h3>
-        <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0; font-size: 0.95rem;">Deep dives into infrastructure deployments, CI/CD pipelines, and routing platforms built for enterprise reliability.</p>
+        <h3
+          style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">
+          Production Systems Case Studies</h3>
+        <p style="color: var(--text-secondary); max-width: 600px; margin: 0.5rem auto 0; font-size: 0.95rem;">Deep dives
+          into infrastructure deployments, CI/CD pipelines, and routing platforms built for enterprise reliability.</p>
       </div>
       <div class="portfolio-cards-grid" id="portfolio-grid" style="margin-bottom: 4rem;">
         <!-- Dynamically populated by renderPortfolio() -->
@@ -3517,7 +4101,9 @@
       <!-- 5. AWARDS & RECOGNITION -->
       <div style="margin-bottom: 2.5rem; text-align: center;">
         <span class="vault-badge">Recognitions</span>
-        <h3 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">Awards & Client Delight Honors</h3>
+        <h3
+          style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">
+          Awards & Client Delight Honors</h3>
       </div>
 
       <div class="awards-row">
@@ -3552,10 +4138,12 @@
         <div class="community-text">
           <span class="vault-badge" style="width: fit-content; margin-bottom: 0.25rem;">Founder & Organizer</span>
           <h4>Founder – GrepMind AI Ops & Cloud Native Community</h4>
-          <p>Focused on knowledge sharing, Kubernetes, Platform Engineering, SRE, AI Ops, Observability, Cloud Native Technologies, and Infrastructure Innovation.</p>
+          <p>Focused on knowledge sharing, Kubernetes, Platform Engineering, SRE, AI Ops, Observability, Cloud Native
+            Technologies, and Infrastructure Innovation.</p>
         </div>
         <div class="profile-contact-actions" style="margin-top: 0; align-self: center;">
-          <a href="https://www.linkedin.com/in/srikanta-nayak-80881940a" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
+          <a href="https://www.linkedin.com/in/srikanta-nayak-80881940a" target="_blank" rel="noopener noreferrer"
+            class="btn btn-primary" style="padding: 0.85rem 1.85rem; font-size: 0.95rem;">
             Join Our Community
           </a>
         </div>
@@ -3567,59 +4155,72 @@
       <div class="section-header">
         <span class="section-badge">Platform Architecture</span>
         <h2 class="section-title">Pioneering Intelligent DevOps & AI Ops</h2>
-        <p class="section-subtitle">GrepMind bridges the gap between raw infrastructure telemetry and closed-loop, automated decision workflows.</p>
+        <p class="section-subtitle">GrepMind bridges the gap between raw infrastructure telemetry and closed-loop,
+          automated decision workflows.</p>
       </div>
 
       <div class="about-main-wrapper" style="margin-bottom: 4rem;">
         <div class="about-story-text">
           <h3>Why Enterprises Partner with GrepMind</h3>
-          <p class="about-paragraph">GrepMind translates complex cloud infrastructure topologies into hardened, self-healing platforms. We design secure orchestration layers, automated incident diagnostic routes, and highly available application platforms.</p>
-          <p class="about-paragraph">Our mission is to enable engineering organizations to mitigate operational fatigue, eliminate configuration drift, and slash MTTR rates by integrating generative AI directly into SRE pipelines.</p>
-          
+          <p class="about-paragraph">GrepMind translates complex cloud infrastructure topologies into hardened,
+            self-healing platforms. We design secure orchestration layers, automated incident diagnostic routes, and
+            highly available application platforms.</p>
+          <p class="about-paragraph">Our mission is to enable engineering organizations to mitigate operational fatigue,
+            eliminate configuration drift, and slash MTTR rates by integrating generative AI directly into SRE
+            pipelines.</p>
+
           <div class="pillars-grid">
             <div class="pillar-card">
               <h4>Hardened Declarative DevOps</h4>
-              <p>State defined via Terraform IaC, ArgoCD GitOps, and Helm custom chart systems. Absolute consistency across dev, staging, and critical production zones.</p>
+              <p>State defined via Terraform IaC, ArgoCD GitOps, and Helm custom chart systems. Absolute consistency
+                across dev, staging, and critical production zones.</p>
             </div>
             <div class="pillar-card">
               <h4>State-of-the-Art AI Ops</h4>
-              <p>Integrates distributed inference servers (vLLM, Triton) and vector data indexes (Qdrant) to execute automated incident Root Cause Analysis (RCA).</p>
+              <p>Integrates distributed inference servers (vLLM, Triton) and vector data indexes (Qdrant) to execute
+                automated incident Root Cause Analysis (RCA).</p>
             </div>
           </div>
         </div>
-        
+
         <div class="about-graphic-frame">
-          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="animation: float 5s ease-in-out infinite;">
+          <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg"
+            style="animation: float 5s ease-in-out infinite;">
             <defs>
               <linearGradient id="glowGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                <stop offset="0%" stop-color="#059669" stop-opacity="0.15"/>
-                <stop offset="100%" stop-color="#10b981" stop-opacity="0"/>
+                <stop offset="0%" stop-color="#059669" stop-opacity="0.15" />
+                <stop offset="100%" stop-color="#10b981" stop-opacity="0" />
               </linearGradient>
             </defs>
             <!-- Background glow -->
             <rect x="15" y="15" width="170" height="170" rx="36" fill="url(#glowGrad)" />
             <!-- Server Cluster Nodes -->
             <!-- Main Gateway -->
-            <rect x="75" y="25" width="50" height="26" rx="6" fill="#ffffff" stroke="#059669" stroke-width="2"/>
-            <text x="100" y="41" font-size="7" font-weight="700" fill="#064e3b" text-anchor="middle" font-family="'Space Grotesk', sans-serif">AI GATEWAY</text>
-            
-            <!-- Nodes in Multi-Cloud -->
-            <rect x="25" y="90" width="42" height="22" rx="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
-            <text x="46" y="103" font-size="6.5" font-weight="700" fill="#475569" text-anchor="middle" font-family="'Space Grotesk', sans-serif">AWS EKS</text>
-            
-            <rect x="79" y="105" width="42" height="22" rx="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
-            <text x="100" y="118" font-size="6.5" font-weight="700" fill="#475569" text-anchor="middle" font-family="'Space Grotesk', sans-serif">AZURE AKS</text>
+            <rect x="75" y="25" width="50" height="26" rx="6" fill="#ffffff" stroke="#059669" stroke-width="2" />
+            <text x="100" y="41" font-size="7" font-weight="700" fill="#064e3b" text-anchor="middle"
+              font-family="'Space Grotesk', sans-serif">AI GATEWAY</text>
 
-            <rect x="133" y="90" width="42" height="22" rx="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5"/>
-            <text x="154" y="103" font-size="6.5" font-weight="700" fill="#475569" text-anchor="middle" font-family="'Space Grotesk', sans-serif">ON-PREM</text>
+            <!-- Nodes in Multi-Cloud -->
+            <rect x="25" y="90" width="42" height="22" rx="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5" />
+            <text x="46" y="103" font-size="6.5" font-weight="700" fill="#475569" text-anchor="middle"
+              font-family="'Space Grotesk', sans-serif">AWS EKS</text>
+
+            <rect x="79" y="105" width="42" height="22" rx="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5" />
+            <text x="100" y="118" font-size="6.5" font-weight="700" fill="#475569" text-anchor="middle"
+              font-family="'Space Grotesk', sans-serif">AZURE AKS</text>
+
+            <rect x="133" y="90" width="42" height="22" rx="4" fill="#ffffff" stroke="#10b981" stroke-width="1.5" />
+            <text x="154" y="103" font-size="6.5" font-weight="700" fill="#475569" text-anchor="middle"
+              font-family="'Space Grotesk', sans-serif">ON-PREM</text>
 
             <!-- Network tunnels (connections) -->
-            <path d="M100 51 L46 90 M100 51 L100 105 M100 51 L154 90" stroke="#34d399" stroke-width="1.5" stroke-dasharray="3,3" stroke-linecap="round"/>
-            
+            <path d="M100 51 L46 90 M100 51 L100 105 M100 51 L154 90" stroke="#34d399" stroke-width="1.5"
+              stroke-dasharray="3,3" stroke-linecap="round" />
+
             <!-- Safe approvals gate indicator -->
-            <circle cx="100" cy="71" r="10" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+            <circle cx="100" cy="71" r="10" fill="#ecfdf5" stroke="#059669" stroke-width="1.5" />
             <!-- Lock icon inside circle -->
-            <path d="M97 73 h6 v-3.5 a3 3 0 0 0 -6 0 z M96 73 v4 h8 v-4 z" fill="#059669"/>
+            <path d="M97 73 h6 v-3.5 a3 3 0 0 0 -6 0 z M96 73 v4 h8 v-4 z" fill="#059669" />
           </svg>
         </div>
       </div>
@@ -3627,60 +4228,84 @@
       <!-- Core Pillars Row: Enterprise Features -->
       <div style="margin-bottom: 2.5rem; text-align: center;">
         <span class="vault-badge">Core Pillars</span>
-        <h3 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">Corporate Engineering Standards</h3>
+        <h3
+          style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-top: 0.5rem;">
+          Corporate Engineering Standards</h3>
       </div>
       <div class="skills-catalog-grid" style="margin-bottom: 4rem;">
         <article class="skills-category-card">
           <div class="skills-category-title">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="11" width="18" height="11" rx="2" stroke-width="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+              <rect x="3" y="11" width="18" height="11" rx="2" stroke-width="2" />
+              <path d="M7 11V7a5 5 0 0110 0v4" />
+            </svg>
             Zero-Trust Governance
           </div>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">Strict namespace separation, centralized RBAC policies, and real-time audit event logging to satisfy rigorous SOC2, ISO27001, and HIPAA compliance specifications.</p>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">Strict namespace separation,
+            centralized RBAC policies, and real-time audit event logging to satisfy rigorous SOC2, ISO27001, and HIPAA
+            compliance specifications.</p>
         </article>
 
         <article class="skills-category-card">
           <div class="skills-category-title">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M22 12h-4l-3 9L9 3l-3 9H2" />
+            </svg>
             High-Fidelity Observability
           </div>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">Aggregates trace logs, cluster event metrics, and container statistics through OpenTelemetry, Prometheus scrapers, and unified Elasticsearch log ingestion pipelines.</p>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">Aggregates trace logs, cluster
+            event metrics, and container statistics through OpenTelemetry, Prometheus scrapers, and unified
+            Elasticsearch log ingestion pipelines.</p>
         </article>
 
         <article class="skills-category-card">
           <div class="skills-category-title">
-            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18.36 6.64a9 9 0 11-12.73 0M12 2v10"/></svg>
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M18.36 6.64a9 9 0 11-12.73 0M12 2v10" />
+            </svg>
             Controlled Auto-Remediation
           </div>
-          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">Runs automated troubleshooting loops with safe rollback thresholds, risk scoring checks, and manual-approval triggers for critical system recoveries.</p>
+          <p style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">Runs automated troubleshooting
+            loops with safe rollback thresholds, risk scoring checks, and manual-approval triggers for critical system
+            recoveries.</p>
         </article>
       </div>
 
       <!-- Enterprise Metrics Block -->
-      <div style="background: var(--gradient-subtle); border: 1px solid var(--border-glow); border-radius: var(--radius-lg); padding: 3rem; margin-bottom: 4rem; text-align: center; position: relative;">
-        <span class="vault-badge" style="background: #ffffff; color: var(--primary); margin-bottom: 1rem;">Platform Impact Scale</span>
-        <h4 style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2rem;">GrepMind Operational Statistics</h4>
-        
+      <div
+        style="background: var(--gradient-subtle); border: 1px solid var(--border-glow); border-radius: var(--radius-lg); padding: 3rem; margin-bottom: 4rem; text-align: center; position: relative;">
+        <span class="vault-badge" style="background: #ffffff; color: var(--primary); margin-bottom: 1rem;">Platform
+          Impact Scale</span>
+        <h4
+          style="font-family: var(--font-display); font-size: 1.85rem; font-weight: 700; color: var(--text-primary); margin-bottom: 2rem;">
+          GrepMind Operational Statistics</h4>
+
         <div class="awards-row" style="margin-bottom: 0;">
           <div class="award-badge-card" style="padding: 2rem 1.5rem; gap: 0.25rem;">
-            <div style="font-family: var(--font-display); font-size: 2.25rem; font-weight: 700; color: var(--primary);">100K+</div>
+            <div style="font-family: var(--font-display); font-size: 2.25rem; font-weight: 700; color: var(--primary);">
+              100K+</div>
             <h5 style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Alerts Diagnosed</h5>
             <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 500;">Using Closed-Loop AI</span>
           </div>
 
           <div class="award-badge-card" style="padding: 2rem 1.5rem; gap: 0.25rem;">
-            <div style="font-family: var(--font-display); font-size: 2.25rem; font-weight: 700; color: var(--primary);">99.99%</div>
+            <div style="font-family: var(--font-display); font-size: 2.25rem; font-weight: 700; color: var(--primary);">
+              99.99%</div>
             <h5 style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">System Availability</h5>
             <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 500;">Production Target SLA</span>
           </div>
 
           <div class="award-badge-card" style="padding: 2rem 1.5rem; gap: 0.25rem;">
-            <div style="font-family: var(--font-display); font-size: 2.25rem; font-weight: 700; color: var(--primary);">14 Mins</div>
+            <div style="font-family: var(--font-display); font-size: 2.25rem; font-weight: 700; color: var(--primary);">
+              14 Mins</div>
             <h5 style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Mean Time to Repair</h5>
-            <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 500;">Auto-Remediation Average</span>
+            <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 500;">Auto-Remediation
+              Average</span>
           </div>
 
           <div class="award-badge-card" style="padding: 2rem 1.5rem; gap: 0.25rem;">
-            <div style="font-family: var(--font-display); font-size: 2.25rem; font-weight: 700; color: var(--primary);">10+</div>
+            <div style="font-family: var(--font-display); font-size: 2.25rem; font-weight: 700; color: var(--primary);">
+              10+</div>
             <h5 style="font-weight: 700; color: var(--text-primary); font-size: 0.95rem;">Cloud Regions</h5>
             <span style="font-size: 0.78rem; color: var(--text-muted); font-weight: 500;">Simultaneously Managed</span>
           </div>
@@ -3693,7 +4318,8 @@
       <div class="section-header">
         <span class="section-badge">Get Gated Access</span>
         <h2 class="section-title">Connect with GrepMind</h2>
-        <p class="section-subtitle">Reach out for enrollment inquiries or to request Workspace authorization permissions for your team.</p>
+        <p class="section-subtitle">Reach out for enrollment inquiries or to request Workspace authorization permissions
+          for your team.</p>
       </div>
 
       <div class="contact-grid-layout">
@@ -3702,15 +4328,21 @@
           <form id="portal-contact-form" onsubmit="submitContactForm(event)">
             <div class="form-group-field">
               <label for="contact-name" class="field-label">Your Name</label>
-              <input type="text" id="contact-name" class="field-input" placeholder="Srikanta Nayak" required minlength="2" pattern="^[a-zA-Z\s]{2,50}$" title="Name must be letters and spaces only, between 2 and 50 characters.">
+              <input type="text" id="contact-name" class="field-input" placeholder="Srikanta Nayak" required
+                minlength="2" pattern="^[a-zA-Z\s]{2,50}$"
+                title="Name must be letters and spaces only, between 2 and 50 characters.">
             </div>
             <div class="form-group-field">
               <label for="contact-email" class="field-label">Email Address</label>
-              <input type="email" id="contact-email" class="field-input" placeholder="srika@example.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Please enter a valid email address (e.g. name@domain.com).">
+              <input type="email" id="contact-email" class="field-input" placeholder="srika@example.com" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                title="Please enter a valid email address (e.g. name@domain.com).">
             </div>
             <div class="form-group-field">
               <label for="contact-message" class="field-label">Detailed Message</label>
-              <textarea id="contact-message" class="field-input" placeholder="Describe your workspace requirements or team course inquiries..." required minlength="10" title="Message must be at least 10 characters long."></textarea>
+              <textarea id="contact-message" class="field-input"
+                placeholder="Describe your workspace requirements or team course inquiries..." required minlength="10"
+                title="Message must be at least 10 characters long."></textarea>
             </div>
             <button type="submit" class="btn btn-submit-form" id="contact-btn">Send Message</button>
           </form>
@@ -3726,7 +4358,8 @@
 
           <!-- Alert Success Box -->
           <div class="result-alert-box" id="contact-success-alert">
-            <svg viewBox="0 0 24 24" style="stroke: var(--primary); stroke-width: 2.5; fill: none; display: inline-block;">
+            <svg viewBox="0 0 24 24"
+              style="stroke: var(--primary); stroke-width: 2.5; fill: none; display: inline-block;">
               <circle cx="12" cy="12" r="10" class="success-draw-path" />
               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4" class="success-draw-path" />
             </svg>
@@ -3739,7 +4372,9 @@
           <div class="contact-card-info">
             <div class="contact-icon-box">
               <svg viewBox="0 0 24 24">
-                <path d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" stroke-linecap="round" stroke-linejoin="round"/>
+                <path
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
             <div class="contact-card-details">
@@ -3751,7 +4386,9 @@
           <div class="contact-card-info">
             <div class="contact-icon-box">
               <svg viewBox="0 0 24 24">
-                <path d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-3.066 3.57 3.57 0 011.666 0 3.42 3.42 0 001.946 3.066 3.57 3.57 0 010 3.606 3.42 3.42 0 00-1.946 3.066 3.57 3.57 0 01-1.666 0 3.42 3.42 0 00-1.946-3.066 3.57 3.57 0 010-3.606z" stroke-linecap="round" stroke-linejoin="round"/>
+                <path
+                  d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-3.066 3.57 3.57 0 011.666 0 3.42 3.42 0 001.946 3.066 3.57 3.57 0 010 3.606 3.42 3.42 0 00-1.946 3.066 3.57 3.57 0 01-1.666 0 3.42 3.42 0 00-1.946-3.066 3.57 3.57 0 010-3.606z"
+                  stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
             <div class="contact-card-details">
@@ -3763,7 +4400,9 @@
           <div class="contact-card-info">
             <div class="contact-icon-box">
               <svg viewBox="0 0 24 24" stroke="currentColor" fill="none">
-                <path d="M12 2a10 10 0 00-10 10c0 5.25 10 10 10 10s10-4.75 10-10a10 10 0 00-10-10zm0 14a4 4 0 110-8 4 4 0 010 8z" stroke-linecap="round" stroke-linejoin="round"/>
+                <path
+                  d="M12 2a10 10 0 00-10 10c0 5.25 10 10 10 10s10-4.75 10-10a10 10 0 00-10-10zm0 14a4 4 0 110-8 4 4 0 010 8z"
+                  stroke-linecap="round" stroke-linejoin="round" />
               </svg>
             </div>
             <div class="contact-card-details">
@@ -3784,8 +4423,9 @@
     <div class="register-modal-content">
       <button class="close-register-btn" onclick="closeRegisterModal()">&times;</button>
       <h3 class="register-modal-title" id="register-modal-title">Request Course Access</h3>
-      <p class="register-modal-desc">Register below to submit your details. Our systems will automatically whitelist your email on the target Google Drive folder.</p>
-      
+      <p class="register-modal-desc">Register below to submit your details. Our systems will automatically whitelist
+        your email on the target Google Drive folder.</p>
+
       <!-- Registration Form -->
       <form id="portal-register-form" onsubmit="submitRegistrationForm(event)">
         <input type="hidden" id="register-course-id">
@@ -3799,7 +4439,8 @@
         </div>
         <div class="form-group-field">
           <label for="register-gacc" class="field-label">Google Account Email (For Drive Gating)</label>
-          <input type="email" id="register-gacc" class="field-input" placeholder="srika@gmail.com (Leave same if identical)" required>
+          <input type="email" id="register-gacc" class="field-input"
+            placeholder="srika@gmail.com (Leave same if identical)" required>
         </div>
         <div class="form-group-field">
           <label for="register-exp" class="field-label">Engineering Experience</label>
@@ -3824,10 +4465,11 @@
       <!-- Success Alert Box -->
       <div class="result-alert-box" id="register-success-alert">
         <svg viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          <path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
         </svg>
         <h4>Access Request Logged!</h4>
-        <p>Registration complete. Your access request is being processed. You will receive an automated access invite shortly.</p>
+        <p>Registration complete. Your access request is being processed. You will receive an automated access invite
+          shortly.</p>
       </div>
     </div>
   </div>
@@ -3840,15 +4482,19 @@
       <div class="footer-brand-column">
         <div class="footer-logo-title">
           <!-- Logo image duplicate loaded in script -->
-          <img class="footer-brand-logo" id="footer-logo-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23059669' d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E" alt="Logo">
+          <img class="footer-brand-logo" id="footer-logo-img"
+            src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23059669' d='M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5'/%3E%3C/svg%3E"
+            alt="Logo">
           <span><span class="brand-orange">Grep</span><span class="brand-green">Mind</span></span>
         </div>
-        <p class="footer-brand-desc">Enterprise-grade Kubernetes, cloud architectures and AI deployments. Study contents gated via secure Google drive folder networks.</p>
+        <p class="footer-brand-desc">Enterprise-grade Kubernetes, cloud architectures and AI deployments. Study contents
+          gated via secure Google drive folder networks.</p>
       </div>
-      
+
       <div>
         <h4 class="footer-title-h4">Study Portal</h4>
         <div class="footer-link-group">
+          <a href="#products" class="footer-link-item" data-view="products">Products</a>
           <a href="#courses" class="footer-link-item" data-view="courses">Courses Dashboard</a>
           <a href="#services" class="footer-link-item" data-view="services">Enterprise Services</a>
           <a href="#portfolio" class="footer-link-item" data-view="portfolio">Case Architectures</a>
@@ -3864,23 +4510,26 @@
         </div>
       </div>
     </div>
-    
+
     <div class="footer-credits-bar">
       <div class="footer-copyright-text">
         &copy; 2026 GrepMind (www.grepmind.com). All rights reserved.
       </div>
-      
+
       <div class="footer-social-wrapper">
-        <a href="https://www.linkedin.com/in/srikanta-nayak-80881940a" target="_blank" class="footer-social-btn" rel="noopener noreferrer">
+        <a href="https://www.linkedin.com/in/srikanta-nayak-80881940a" target="_blank" class="footer-social-btn"
+          rel="noopener noreferrer">
           <svg viewBox="0 0 24 24">
-            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
           </svg>
           LinkedIn
         </a>
-        
+
         <a href="https://github.com/srikanta1219" target="_blank" class="footer-social-btn" rel="noopener noreferrer">
           <svg viewBox="0 0 24 24">
-            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
           </svg>
           GitHub
         </a>
@@ -3902,7 +4551,7 @@
       // 1. Google Drive Hero Image File ID. 
       // If left blank, it will load the local "grepmind_hero_green.png" file from directory.
       heroImageDriveId: "1hKjif6qZRERM9UAJzZ2Xeqq-BfdL6wbL", // Replace with your live Google Drive image File ID
-      
+
       // 2. Google Drive Logo Image File ID.
       logoImageDriveId: "1f2yHpaQ6XmamqzgFMnpgQBsmUWEhKxXO", // Replace with your live Google Drive logo File ID
 
@@ -3911,7 +4560,7 @@
 
       // 4. Google Drive Product Architecture Image File ID.
       architectureImageDriveId: "1XYH2bMHY3a5vpDNQJD6oktaktg3Fffdu", // Replace with your live Google Drive architecture image File ID
- 
+
       // 5. Google Sheets Course Catalog CSV Export URL.
       // Expected CSV Headers: id, title, category, description, folderId, tags, duration
       coursesSheetCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vSHFXjDiXaKzWD_v0cna9NgY8QPGiAGekprx2I4r_IshPz_8fiyLxRVphQdjuCddIsk6m6K19jIvU8s/pub?output=csv", // Replace with your live CSV export URL
@@ -3920,7 +4569,7 @@
       // Configured to write Contact Form and Access Requests directly to your Sheets database.
       appsScriptWebhookUrl: "https://script.google.com/macros/s/AKfycbzKEMsWDJhDlnUsvIWsSivPGK5g5O50dWojA-9RiBRt7XBrCpAjrTtxwm9TldN7qw7r3w/exec" // Replace with your deployed Web App URL
     };
- 
+
     /*
       ========================================================================
       2. STATIC FALLBACK DATA
@@ -3960,7 +4609,7 @@
         title: "Advanced Kubernetes Platform Engineering",
         category: "DevOps",
         description: "Architect highly available EKS and GKE container topologies. Implement declarative deployment synchronization using ArgoCD GitOps pipelines, Cilium CNI network policies, and Helm chart governance.",
-        folderId: "1F_K8sOperationsTrackMaterialFolderID", 
+        folderId: "1F_K8sOperationsTrackMaterialFolderID",
         tags: ["EKS / GKE", "Argo CD GitOps", "Helm Architecture", "Cilium CNI"],
         duration: "45 hours"
       },
@@ -4034,7 +4683,7 @@
       setupAssets();
       loadCourses();
       renderPortfolio();
-      
+
       // Native navigation support
       window.addEventListener("hashchange", handleHashNavigation);
       handleHashNavigation();
@@ -4046,7 +4695,7 @@
       // a single delegated listener on document — which is NOT
       // removed by Google Sites sandbox restrictions.
       // -------------------------------------------------------
-      document.addEventListener("click", function(e) {
+      document.addEventListener("click", function (e) {
         const target = e.target.closest("[data-view]");
         if (target) {
           e.preventDefault();
@@ -4074,7 +4723,7 @@
       } else {
         heroImg.src = "grepmind_homepage_hero.png";
       }
-      
+
       const brandText = document.getElementById("brand-text");
       if (DYNAMIC_PORTAL_CONFIG.logoImageDriveId && !DYNAMIC_PORTAL_CONFIG.logoImageDriveId.includes("GrepMindLogo")) {
         logoImg.src = `https://lh3.googleusercontent.com/d/${DYNAMIC_PORTAL_CONFIG.logoImageDriveId}`;
@@ -4123,7 +4772,7 @@
       if (event) {
         event.preventDefault();
       }
-      
+
       try {
         history.pushState(null, null, `#${sectionId}`);
       } catch (err) {
@@ -4187,7 +4836,7 @@
     */
     async function loadCourses() {
       const statusBadge = document.getElementById("sheet-status-badge");
-      
+
       if (!DYNAMIC_PORTAL_CONFIG.coursesSheetCsvUrl) {
         // No sheet URL configured, render hardcoded defaults
         console.log("No dynamic Google Sheet course list configured. Using local fallback datasets.");
@@ -4203,7 +4852,7 @@
         if (!response.ok) throw new Error("Could not fetch sheets CSV data");
         const csvText = await response.text();
         const courses = parseCSV(csvText);
-        
+
         if (courses && courses.length > 0) {
           currentCoursesList = courses;
           statusBadge.innerHTML = `<span class="pulse-dot" style="background-color: var(--primary);"></span> Sheets Sync Online`;
@@ -4226,14 +4875,14 @@
       let row = [];
       let val = '';
       let inQuotes = false;
-      
+
       const normalized = csvText.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
-      
+
       let i = 0;
       while (i < normalized.length) {
         const char = normalized[i];
-        const nextChar = normalized[i+1];
-        
+        const nextChar = normalized[i + 1];
+
         if (char === '"') {
           if (inQuotes && nextChar === '"') {
             val += '"';
@@ -4257,21 +4906,21 @@
           i++;
         }
       }
-      
+
       if (row.length > 0 || val !== '') {
         row.push(val.trim());
         result.push(row);
       }
-      
+
       if (result.length < 2) return [];
-      
+
       const headers = result[0].map(h => h.trim().toLowerCase());
       const records = [];
-      
+
       for (let r = 1; r < result.length; r++) {
         const rowData = result[r];
         if (rowData.length === 0 || (rowData.length === 1 && rowData[0] === '')) continue;
-        
+
         const record = {};
         headers.forEach((header, index) => {
           let val = rowData[index] || '';
@@ -4279,7 +4928,7 @@
           if (val.startsWith('"') && val.endsWith('"')) {
             val = val.substring(1, val.length - 1);
           }
-          
+
           if (header === 'tags') {
             record[header] = val.split(';').map(t => t.trim()).filter(t => t);
           } else {
@@ -5677,7 +6326,7 @@ spec:
 
       // Build embedded folderview URL
       const embedUrl = `https://drive.google.com/embeddedfolderview?id=${course.folderId}#grid`;
-      
+
       holder.innerHTML = `
         <iframe 
           src="${embedUrl}" 
@@ -5698,12 +6347,12 @@ spec:
       grid.style.opacity = "0";
       grid.style.transform = "scale(0.98)";
       toolbar.style.opacity = "0";
-      
+
       setTimeout(() => {
         grid.style.display = "none";
         toolbar.style.display = "none";
         viewer.style.display = "flex";
-        
+
         setTimeout(() => {
           viewer.classList.add("active");
           viewer.style.opacity = "1";
@@ -5716,7 +6365,7 @@ spec:
       const driveView = document.getElementById("gdrive-iframe-container");
       const handbookBtn = document.getElementById("toggle-handbook-btn");
       const driveBtn = document.getElementById("toggle-drive-btn");
-      
+
       if (viewType === 'handbook') {
         handbookView.style.display = "grid";
         driveView.style.display = "none";
@@ -5733,7 +6382,7 @@ spec:
     function renderHandbook(courseId, chapterIndex = 0) {
       const viewport = document.getElementById("handbook-viewport");
       const data = HANDBOOK_DATABASE[courseId];
-      
+
       if (!data || !data.chapters || data.chapters.length === 0) {
         viewport.innerHTML = `
           <div style="grid-column: 1/-1; padding: 4rem 2rem; text-align: center; color: var(--text-muted); background: var(--bg-page); border: 1px solid var(--border-color); border-radius: var(--radius-md);">
@@ -5746,15 +6395,15 @@ spec:
         `;
         return;
       }
-      
+
       const chapter = data.chapters[chapterIndex];
-      
+
       const tocHtml = data.chapters.map((ch, idx) => `
         <button class="handbook-toc-btn ${idx === chapterIndex ? 'active' : ''}" onclick="renderHandbook('${courseId}', ${idx})">
           ${ch.title}
         </button>
       `).join('');
-      
+
       const stepsHtml = (chapter.steps || []).map((st, idx) => `
         <div class="sre-step-item">
           <span class="sre-step-num">${idx + 1}</span>
@@ -5764,7 +6413,7 @@ spec:
           </div>
         </div>
       `).join('');
-      
+
       viewport.innerHTML = `
         <aside class="handbook-sidebar">
           <div class="handbook-toc-title">Course Syllabus</div>
@@ -5834,10 +6483,10 @@ spec:
           viewer.style.display = "none";
           holder.innerHTML = ""; // Destroys active iframe memory leak immediately
           handbookViewport.innerHTML = ""; // Clear handbook DOM memory
-          
+
           grid.style.display = "grid";
           toolbar.style.display = "flex";
-          
+
           setTimeout(() => {
             grid.style.opacity = "1";
             grid.style.transform = "scale(1)";
@@ -5863,7 +6512,7 @@ spec:
     */
     async function submitContactForm(event) {
       event.preventDefault();
-      
+
       const form = document.getElementById("portal-contact-form");
       const loader = document.getElementById("contact-loader");
       const alertBox = document.getElementById("contact-success-alert");
@@ -5942,7 +6591,7 @@ spec:
           },
           body: JSON.stringify(payload)
         });
-        
+
         const resData = await response.json();
         return resData.status === "success";
       } catch (err) {
@@ -5966,7 +6615,7 @@ spec:
 
       idInput.value = courseId;
       title.textContent = `Register for ${courseTitle}`;
-      
+
       // Reset state views inside modal
       form.style.display = "block";
       alertBox.style.display = "none";
@@ -6043,7 +6692,7 @@ spec:
             </div>
           </div>
         </div>`;
-      
+
       modal.style.display = "flex";
       setTimeout(() => {
         modal.classList.add("active");
@@ -6114,4 +6763,5 @@ spec:
 
 
 </body>
+
 </html>
